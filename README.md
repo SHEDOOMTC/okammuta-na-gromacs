@@ -19,8 +19,8 @@ This script automates residue renumbering, atom count updates, and ligand insert
 # Installation
 ```bash
 #Clone repository
-git clone https://github.com/SHEDOOMTC/My-Lessons-with-Gromacs.git
-cd Combine-DNA-ligand
+git clone https://github.com/SHEDOOMTC/okammuta-na-gromacs.git
+cd okammuta-na-gromacs
 #copy your ligand and DNA/protein gro file into Combine-DNA-ligand/
 # Make executable
 chmod +x njiko-DNA-na-ligand.sh

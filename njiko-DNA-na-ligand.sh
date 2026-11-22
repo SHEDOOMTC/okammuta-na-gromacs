@@ -66,7 +66,7 @@ for ((n=1; n<=copies; n++)); do
 
     #Use sed to replace the name and number of ligand
 
-    sed "s/ 1${lig_name} /${num}${lig_name} /" complex_renum.gro > complex_fixed.gro
+    sed "s/ 1${lig_name} /${num}${lig_name} /" complex_renum.gro > complex_fixed.gro -resnr 1
 
     mv complex_fixed.gro "$complex_gro"
 

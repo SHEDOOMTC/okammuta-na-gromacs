@@ -60,13 +60,13 @@ for ((n=1; n<=copies; n++)); do
     ##### STEP 2 ######
 
     # Use gromacs to renumber the atoms
-    gmx editconf -f "$complex_gro" -o complex_renum.gro
+    gmx editconf -f "$complex_gro" -o complex_renum.gro -resnr 1
 
     ##### STEP 3 ######
 
     #Use sed to replace the name and number of ligand
 
-    sed "s/ 1${lig_name} /${num}${lig_name} /" complex_renum.gro > complex_fixed.gro -resnr 1
+    sed "s/ 1${lig_name} /${num}${lig_name} /" complex_renum.gro > complex_fixed.gro
 
     mv complex_fixed.gro "$complex_gro"
 
